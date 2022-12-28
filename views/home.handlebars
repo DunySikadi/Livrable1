@@ -1,0 +1,25 @@
+<div class="flex-fill p-20 d-flex flex-column align-items-center justify-content-center">
+     <div class="card p-2">
+        {{#if detail}}
+        {{#each detail}}
+            <div class="d-flex mb-10">
+                <div class="pr-10 detail-main-img">
+                    <img src={{image}} alt="image">
+                </div>
+                <div>
+                    <h4>{{title}}</h4>
+                    <p>{{decription}}</p>
+                </div>
+            </div>
+            <div class="t-align">
+                <a href="/home">
+                    <button class="btn btn-primary">Retour</button>
+                </a>
+            </div>
+            {{/each}}
+        {{else}}
+        {{>list-game}} 
+        {{/if}}   
+    </div>
+</div>
+
